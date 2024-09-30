@@ -22,7 +22,6 @@ public class ParseNumbers {
         String messageStr = String.join("", messageStrArray);
         messageStrArray = messageStr.split(",");
         int[] messageNumbers = new int[messageStrArray.length];
-        System.out.println("First set of string processing passed.");
 
         // This loop converts the numbers from string form to integer form so that
         // they may be used in logic if necessary. This is simply an example function
@@ -46,7 +45,6 @@ public class ParseNumbers {
         for (int number : messageNumbers) {
             messageStrArray[i++] = String.valueOf(number);
         }
-        System.out.println("Managed to get before finalMessageStr.");
         String finalMessageStr = String.format("Parsed Integers: %s\nSum: %d",
                 String.join(", ", messageStrArray), sumNumbers);
         try {

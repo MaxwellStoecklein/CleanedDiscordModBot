@@ -29,9 +29,7 @@ public class CommandHandler {
     public CommandHandler(GatewayDiscordClient gateway, Message message, DeletedMessages deletedMessages) {
         User sender = new User(gateway, message.getUserData());
 
-        if(sender.isBot()) {
-            System.out.println("Sender was a bot. Ignoring...");
-        } else {
+        if(!sender.isBot()) {
             // The message that was passed must be broken down in multiple stages to make its contents readable.
             // The current implementation restricts the use of spaces and "!"s within a command's arguments
             // as these characters are used to differentiate between elements like the command marker, command arguments,
