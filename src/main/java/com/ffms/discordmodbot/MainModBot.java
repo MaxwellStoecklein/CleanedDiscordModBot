@@ -21,7 +21,7 @@ public class MainModBot {
     public static void main(String[] args) {
         // If the following line's string is set as "token", the bot will fail to run. Token should be replaced with
         // a valid Discord bot token.
-        DiscordClient client = DiscordClient.create("token");
+        DiscordClient client = DiscordClient.create("");
         DeletedMessages deletedMessages = new DeletedMessages();
 
         Mono<Void> login = client.withGateway((GatewayDiscordClient gateway) -> {

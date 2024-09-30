@@ -3,19 +3,9 @@
 package com.ffms.discordmodbot;
 
 import discord4j.core.object.entity.Message;
-import reactor.core.publisher.Mono;
 
-public class DeleteMessage {
-    private Mono<Void> command;
-    public Mono<Void> getCommand() {
-        if (command != null) {
-            return command;
-        } else{
-            return Mono.empty();
-        }
-    }
+public class DeleteMessage extends ActionCommand {
 
-    //
     public DeleteMessage(Message message) {
         System.out.println(message.getContent());
         // The following will produce an "Error while handling MessageCreateEvent" warning

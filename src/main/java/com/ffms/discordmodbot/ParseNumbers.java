@@ -3,19 +3,10 @@
 package com.ffms.discordmodbot;
 
 import discord4j.core.object.entity.Message;
-import reactor.core.publisher.Mono;
 
 import java.util.Arrays;
 
-public class ParseNumbers {
-    private Mono<Message> command;
-    public Mono<Message> getCommand() {
-        if (command != null) {
-            return command;
-        } else {
-            return Mono.empty();
-        }
-    }
+public class ParseNumbers extends MessageCommand{
 
     public ParseNumbers(String[] messageStrArray, Message message) {
         messageStrArray[0] = "";
