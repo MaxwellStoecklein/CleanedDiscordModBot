@@ -1,3 +1,5 @@
+// @author Maxwell Stoecklein
+
 package com.ffms.discordmodbot;
 import discord4j.core.DiscordClient;
 import discord4j.core.GatewayDiscordClient;
@@ -9,8 +11,6 @@ import discord4j.core.object.entity.User;
 import reactor.core.publisher.Mono;
 
 import java.util.Optional;
-
-// @author Maxwell James Stoecklein
 
 // This program runs a discord bot intended for use as a moderation tool, with some extra features.
 // I would've added some essentials like a ban command, however I don't have an alt to repeatedly invite and ban.

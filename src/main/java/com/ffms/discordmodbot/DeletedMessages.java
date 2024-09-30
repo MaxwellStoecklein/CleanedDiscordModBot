@@ -1,3 +1,5 @@
+// @author Maxwell Stoecklein
+
 package com.ffms.discordmodbot;
 
 import discord4j.common.util.Snowflake;
