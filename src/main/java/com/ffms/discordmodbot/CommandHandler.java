@@ -62,6 +62,9 @@ public class CommandHandler {
                         SnipeMessage snipeMessage = new SnipeMessage(index, deletedMessages, message);
                         messageResponse = snipeMessage.getCommand();
                         break;
+                    case "!realsnipe":
+                        PostSnipe postSnipe = new PostSnipe(message);
+                        messageResponse = postSnipe.getCommand();
                     default:
                         break;
                 }
